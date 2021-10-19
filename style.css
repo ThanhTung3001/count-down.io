@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1-1024x682.jpg");
+      background-size: cover;
+      font-family: 'Noto Sans Mono', monospace;
+      background-repeat: no-repeat;
+}
+.time_curren,
+#container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sreen{
+    width: 30%;
+    height: 200px;
+    background-color: hsl(210,8%,20%);
+    border-radius: 12px;
+}
+.option,
+.time_curren{
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option{
+    display: flex;
+    flex-direction: row;
+}
+.option input{
+    width: 200px;
+    height: 40px
+}
+.option button{
+    border:none;
+   background-color: blueviolet;
+    width: 70px;
+    height: 40px;
+}
+@media only screen and (max-width: 600px) {
+   .option{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .sreen{
+       width: 50%;
+   }
+  }
